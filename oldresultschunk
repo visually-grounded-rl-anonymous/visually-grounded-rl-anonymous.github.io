@@ -1,0 +1,43 @@
+                <hr>
+                <div class="w3-center">
+                    <h2>Results</h2>
+                </div>
+
+                <div class="w3-center">
+                    <h3>Household Instruction Following</h3>
+                </div>
+                <p>Below are results on the TEACh household instruction following validation unseen dataset. <b>ICAL examples significantly improves on the state-of-the-art by 12.6% in goal-condition success</b>, outperforming agents that use the raw visual demonstrations as in context examples without abstraction learning</p>
+                <div class="w3-center" style="width: 100%;"><img style="width: 80%" src="images/instruction_following_success.jpg"></div>
+                <br>
+                <div class="w3-center">
+                    <h4>Finetuning on ICAL examples complements retrieval</h4>
+                </div>
+                <p><b>The most notable advancement was achieved when fine-tuning was combined with retrieval-augmented generation</b>, achieving a
+                Success rate of 35.4% and a sub-task score of 55.9%. This demonstrate that consolidating the learned examples through
+                fine-tuning, particularly when integrated with retrieval processes through in-context learning, improves performance.</p>
+                <div class="w3-center" style="width: 100%;"><img style="width: 80%" src="images/finetuning_plots.jpg"></div>
+                <br>
+                <div class="w3-center">
+                    <h4>Ablations</h4>
+                </div>
+                <p>Our ablations reveal the importance of both the offline and human-in-the-loop abstraction making for performance.</p>
+                <div class="w3-center" style="width: 100%;"><img style="width: 50%" src="images/ablation_plots.jpg"></div>
+                <div class="w3-center" style="width: 100%;"><img style="width: 30%" src="images/white_space.jpg"></div>
+                <div class="w3-center">
+                    <h3>Autonomous Visual Web Agents</h3>
+                </div>
+                <p><b>ICAL outperforms the previous state-of-the-art GPT4V +
+                SoM (Koh et. Al., 2023) on the VisualWebArena benchmark</b> by an absolute 8.4% in average success rate. The baseline utilizes GPT4V with few-shot hand-designed examples and set of
+                marks image prompting.</p>
+                <div class="w3-center" style="width: 100%;"><img style="width: 50%" src="images/VWA_plots.jpg"></div>
+                <div class="w3-center" style="width: 100%;"><img style="width: 30%" src="images/white_space.jpg"></div>
+                <div class="w3-center">
+                    <h3>Ego4D Video Action Forecasting</h3>
+                </div>
+                <p>ICAL demonstrates superior performance on Ego4D
+                action anticipation compared to hand-written few-shot GPT4V that uses chain of thought. ICAL also remains competitive with the fully supervised
+                baseline (grauman et. Al., 2022) despite using 639x less training data.</p>
+                <div class="w3-center" style="width: 100%; padding-left: 70px;"><img style="width: 50%" src="images/video_forecasting_website.jpg"></div>
+                
+                <div class="w3-center" style="width: 100%;"><img style="width: 30%" src="images/white_space.jpg"></div>
+                <div class="w3-center" style="width: 100%;"><img style="width: 30%" src="images/white_space.jpg"></div>
